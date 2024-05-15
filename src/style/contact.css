@@ -1,0 +1,19 @@
+
+
+
+.contact  .image-hero {
+  height: calc(100vh - 85px);
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+}
+.overly::after {
+  content: "";
+  width: 100%;
+  height: calc(100vh - 85px);
+  background-color: #00000094;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}

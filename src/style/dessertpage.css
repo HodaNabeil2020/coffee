@@ -1,0 +1,35 @@
+
+
+
+
+
+@media (max-width:576px){
+  .dessert-filter {
+    width: 295px !important;
+
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .btn-filter  {
+    font-size: 15px !important;
+  }
+}
+
+
+@media (max-width:307px){
+  .dessert-menu  div > h2 {
+    font-size: 20px !important;
+  }
+
+  .dessert-filter {
+    width: 250px !important;
+  }
+  .btn-filter {
+    font-size: 14px !important;
+    margin: 0 !important;
+      column-gap: 2px !important;
+  }
+  .why  div > h2 span {
+
+  }
+}

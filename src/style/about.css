@@ -1,0 +1,131 @@
+.container-counter {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .container-counter {
+    padding-top: 50px;
+  }
+}
+.about .overly::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: #100908ab;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container-video.overly::after {
+  height: 100% !important;
+}
+.about .icon-team i {
+  background-color: #c9975e;
+  width: 30px;
+  height: 30px;
+  color: #fefae0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.about .icon-team i:hover {
+  color: #c9975e;
+  transition: 0.3s all linear;
+  background-color: #fefae0;
+}
+.about .information-chef h4,
+.information-chef i {
+  z-index: 999;
+}
+.information-chef::after {
+  content: "";
+  position: absolute;
+  top: -92%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0000008f;
+  width: 180px;
+  height: 170px;
+  border-radius: 8px;
+}
+
+.about .slider {
+  background-image: url("../IMg/bg-sweets.jpg");
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+.about .slider.overly::after {
+  width: 100%;
+  height: 500px;
+}
+
+.about .slider .btn {
+  background-color:#c4975e;
+  width: 40px;
+  height: 40px;
+  position:absolute;
+  top: 50%;
+}
+.about .slider .btn:first-child {
+  border-radius: 2px 87px 59px 54px;
+left: 0;
+}
+.about .slider .btn:nth-child(2){
+  border-radius: 59px 2px 54px 87px;
+  right: 0;
+}
+
+@media (max-width:576px) {
+  
+.about .slider .btn {
+font-size: 14px;
+width: 30px;
+height: 30px;
+padding: 0 10px ;
+}
+}
+
+
+@media (max-width:400px) {
+  .box-img-1{
+    width: 180px;
+    height: 180px;
+  }
+  .box-img-2 {
+    width: 90px;
+    height: 100px !important;
+    left: 135px !important;
+  }
+  .about  .header-about   h2  {
+    font-size: 27px !important;
+
+  }
+  .about  .header-about   h3 {
+    font-size: 20px !important;
+  }
+
+}
+
+@media (max-width:300px) {
+  .about  .header-about   h2  {
+    font-size: 23px !important;
+  }
+
+    .container-video h2  {
+        font-size: 12px;
+    }
+
+    .container-video h2 span {
+      font-size: 13px;
+    }
+
+    .container-video a {
+      font-size: 10px;
+    }
+
+}

@@ -1,0 +1,58 @@
+:root {
+  --mainColor:#220100;
+}
+.menu-backgouned {
+  background-image: url('../IMg/hero_2.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  object-fit: cover;
+  overflow: hidden;
+}
+.container-btn {
+  background-color: #100908;
+  max-width: 380px;
+  padding: 10px 15px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px  auto;
+  border-radius: 50px;
+  color: #fff;
+  gap: 20px;
+  box-shadow: 0px 1px 0px 8px #f4e8d64d;
+}
+.container-btn .active {
+  color: var(--mainColor);
+  background-color: #fff;
+  padding: 4px 8px;
+  border-radius: 50px;
+}
+.container-btn > button {
+  font-family: "Kaushan Script";
+  letter-spacing: 1px;
+}
+/* mobeil */
+
+@media (min-width:768px) {
+  .container-btn > button {
+    font-size: 20px;
+  }
+}
+@media (max-width:576px) {
+  .container-btn {
+    max-width: 245px !important;
+    gap: 10px;
+    font-size: 14px;
+    box-shadow: 0px 1px 0px 5px #f4e8d64d;
+  }
+  
+}
+
+@media (min-width:1200px) {
+  .menu-backgouned {
+    background: none;
+    background-color: #fff9f773
+  }
+
+}

@@ -1,0 +1,41 @@
+.home_page {
+  background-image: url('../IMg/Asa.jpg');
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  max-width: 1640px;
+  margin: auto;
+
+  position: relative;
+}
+
+:root {
+  --mainColor:#220100;
+}
+.icontype {
+  padding: 5px 8px;
+  border-radius: 4px 6px ;
+  background-color: #ffdab93d;
+  cursor: pointer;
+}
+.typecofe .card-type {
+  margin-bottom: 90px;
+}
+.typecofe div:nth-child(1) img {
+  top: -140px !important;
+
+}
+.typecofe div:nth-child(2) img {
+  top: -240px !important;
+
+}
+
+@media (min-width:1200px) {
+  .home_page {
+    background-color: #c9975e91 !important;
+    background-image: none;
+  }
+  
+}

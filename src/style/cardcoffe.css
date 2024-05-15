@@ -1,0 +1,95 @@
+
+:root {
+  --mainColor:#220100;
+}
+
+
+.price-btn {
+  color: #fff;
+  background-color: var(--mainColor);
+  padding: 8px 10px;
+  width: fit-content;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+}
+.menu-coffe .card-cofe {
+  background-color: #f4e8d64d;
+  padding: 20px;
+  margin: 15px  ;
+  border-radius: 35px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.menu-coffe .image {
+  padding: 30px ;
+  position: relative;
+}
+.menu-coffe .container-menu  .card-cofe img {
+  width: 180px;
+  position: absolute;
+  top: -70px;
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+@media (max-width:767px)  {
+  .menu-coffe .card-cofe {
+    height: 275px;
+  }
+  .container-menu  img {
+    width: 160px !important;
+  }
+  .menu-coffe .image {
+    padding: 20px;
+  }
+  .card-cofe .price-btn {
+      bottom: -15px;
+  }
+}
+.second-color {
+  color: #220100a6;
+}
+
+/* Icon */
+
+
+@media (max-width:576px) {
+  .container-menu   {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+  .card-cofe  {
+    height: 210px !important;
+  }
+  .image {
+    padding: 20px 0;
+  }
+  .card-cofe > div .des {
+    font-size: 15px;
+  }
+  .card-cofe .price-btn  {
+    font-size: 12px;
+    bottom: -15px !important;
+    padding: 5px 10px !important;
+  }
+  
+}
+
+@media (max-width:444px) {
+  .menu-coffe .card-cofe {
+    height: 178px !important;
+  }
+  .card-cofe .image {
+    padding: 10px 0;
+  }
+  .card-cofe .image  img {
+    width: 140px !important;
+  }
+  .card-cofe > div .des {
+    padding-bottom: 0;
+  }
+}
+

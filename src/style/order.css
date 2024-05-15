@@ -1,0 +1,91 @@
+:root {
+  --mainColor:#220100;
+}
+
+.empty-card  {
+  height: calc(100vh - 85px);
+}
+.page-order {
+  background-color: var(--mainColor);
+}
+.card-order-left {
+  background-color: #c7996a;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px 0px;
+}
+.card-order-left .quantity ,.delete-btn {
+  position: absolute;
+  right: 2px;
+  background-color: #220100;
+  padding: 10px;
+  color: #f9d6b5;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px 0;
+}
+.card-order-left .quantity {
+  top: 2px;
+}
+.card-order-left  .delete-btn {
+  bottom: 2px;
+  cursor: pointer;
+}
+
+.card-order-left  img {
+  max-width: 100%;
+  border-radius: 50%;
+  filter: drop-shadow(11px 1px 2px rgb(0, 0, 0 ,0.5));
+}
+.card-order-left  .container-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+.card-order-left  .container-quantity p {
+  background-color: #220100;
+  border-radius: 10px 0;
+  padding: 4px 10px;
+  color: #f9d6b5;
+  font-size: 16px;
+
+}
+
+
+/* Right */
+.right-order {
+  border-radius: 20px ;
+}
+.right-order div:first-child {
+  border-radius: 20px 20px 0px  0px;
+}
+.right-order ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  margin-bottom: 8px;
+  color: #220100;
+}
+.right-order ul li  span {
+  color: #ffdab9;
+  font-size: 15px;
+}
+.right-order ul li:last-child {
+  border-top: #220100 2px solid;
+}
+.check {
+  background: #220100;
+  border-radius: 50px;
+  padding: 10px;
+  border: #a4997d 1px solid;
+  cursor: pointer;
+}
+
+@media (max-width:280px) {
+  .page-order   h2 {
+    font-size: 24px;
+    padding: 15px !important;
+}
+}

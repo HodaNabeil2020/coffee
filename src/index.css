@@ -1,0 +1,153 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&family=Rubik:wght@400;500;600&family=Saira+Extra+Condensed:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&family=Sevillana&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Rubik+Bubbles&family=Rubik:wght@400;500;600&family=Saira+Extra+Condensed:wght@300;400&display=swap');
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  :root {
+    --mainColor:#220100;
+  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Roboto';
+  list-style: none;
+  text-decoration: none;
+  -webkit-top-highlight-color: transparent;
+}
+/* Start Container  */
+.container {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 1640px;
+}
+@media (max-width:768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width:576px) {
+  .container {
+    padding: 0 20px;
+  }
+}  
+
+/* End Container  */
+.font_2 {
+  font-family: "Kaushan Script";
+}
+
+.font_3 {
+  font-family: 'Sevillana', cursive;
+}
+/* /// */
+
+.background-blur {
+  backdrop-filter: blur(5px);
+  background: transparent;
+}
+.min-color {
+  color: var(--mainColor);
+}
+.icon-favorite::after  ,.add-card::after {
+  padding: 4px;
+  position: absolute;
+  background-color: #de9f65;
+  width: 40px;
+  height: 25px;
+  content: "Add to Wishlist";
+  font-size: 11px;
+  width: 90px;
+  color: #220100;
+  font-weight: bold;
+  border-radius: 6px;
+  top: -30px;
+  display: none;
+}
+.icon-favorite:hover::after {
+  display: block;
+}
+.add-card {
+  position: relative;
+}
+.add-card::after {
+  content: 'Add to Cart';
+}
+.add-card:hover::after {
+  display: block;
+}
+
+.main-height-screen {
+  height: calc(100vh - 85px);
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  color: #fefae0;
+  background-color: var(--mainColor);
+  z-index: 40;
+  right: 27px;
+  padding: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  padding-top: 10px;
+
+}
+@layer base {
+  .mainbtn {
+    background: #220100;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  .secondbtn {
+    background: #220100;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+  }
+  
+  .element-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .element-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.mainbtn:hover {
+  background-color: transparent;
+  border: 2px solid  var(--mainColor);
+  letter-spacing: 2px;
+  transition: all 0.4s;
+}
+@layer base {
+  .mainColor {
+    color:  var(--mainColor);
+  }
+}
+
+
+@media (max-width:576px) {
+  .mainbtn {
+    padding: 6px 10px !important; 
+  }
+  .icon-favorite::after  ,.add-card::after  {
+    top: -24px !important;
+  }
+}

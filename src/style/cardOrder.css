@@ -1,0 +1,18 @@
+
+:root {
+  --mainColor:#220100;
+}
+.background-header {
+  background-color: var(--mainColor);
+
+}
+.page-card > .background-header > header  a 
+,  .page-card  .logo h4 
+, .page-card  .logo  span  {
+  color: #ffffff9c !important;
+}
+.card {
+  background: #c68846;
+  width: 100%;
+  height: 100vh;
+}

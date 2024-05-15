@@ -1,0 +1,58 @@
+
+
+
+form  input  ,form  input[type="submit"] {
+  border-radius: 50px !important;
+}
+
+.account .container  {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.login {
+  height: calc(100vh - 85px);
+}
+
+.break::before {
+  left: 8%;
+}
+
+.break::before , .break::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 36%;
+  background-color: #e3dbc4;
+}
+.break::after{
+  right: 8%;
+}
+
+@media (max-width:768px) {
+
+  .break::before , .break::after {
+    width: 42%;
+  }
+  .break::after{
+    right: 4%;
+  }
+  .break::before {
+    left: 4%;
+  }
+  
+
+}
+
+
+@media (max-width:576px) {
+  
+}
